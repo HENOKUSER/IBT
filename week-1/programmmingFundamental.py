@@ -65,3 +65,9 @@ print(f"a = {a}")  # 10
 
 first_name = "sami"
 print(f"first_name = {first_name}")  # sami
+
+
+# 2. variable name can be any valid identifier
+
+variable_name = "example"
+print(f"variable_name = {variable_name}")  # example                
