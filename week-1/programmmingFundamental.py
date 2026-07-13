@@ -42,6 +42,14 @@ print(f"3. type(1 + 2j): {type(1 + 2j)}")  # complex is used to represent comple
 # 4 string
 print(f"4. type('hello world'): {type('hello world')}")  # string is used to represent text data 
 
+# string concatenation
+first_name = "sami" 
+last_name = "ali"
+full_name = first_name + " " + last_name    
+print(f"full_name = {full_name}")  # sami ali   
+
+print(f"full_name = {first_name} +5")  # sami5
+
 
 # 5. list
 print(f"5. type([1, 2, 3]): {type([1, 2, 3])}")  # list is used to represent a collection of items    
@@ -71,3 +79,68 @@ print(f"first_name = {first_name}")  # sami
 
 variable_name = "example"
 print(f"variable_name = {variable_name}")  # example                
+
+
+# Operators 
+# 1. assignment operators 
+# =
+name = "henok"
+age = 25
+print(f"name = {name}")  # henok
+print(f"age = {age}")  # 25
+
+# 2. artimetics operators 
+# +, -, *, /, %, **, //, +=, -=, *=, /=, %=, **=, //=
+number1=30
+number2=10  
+print(f"sum = {number1 + number2}")  # 40
+print(f"diff = {number1 - number2}")  # 20
+print(f"multi = {number1 * number2}")  # 300       
+print(f"div = {number1 / number2}")  # 3.0  
+print(f"modules ={number1%number2}")   # 0
+print(f"exponent = {number1 ** number2}")  # 10000000000
+
+print(f"floor division = {number1 // number2}")  # 3
+increment=number1
+increment += 5
+print(f"increment = {increment}")  # 35
+
+decrement=number1
+decrement -= 5
+print(f"decrement = {decrement}")  # 25      
+
+multiply=number1
+multiply *= 5
+print(f"multiply = {multiply}")  # 150  
+
+divide=number1
+divide /= 5
+print(f"divide = {divide}")  # 6.0        
+
+modules=number1
+modules %= 5
+print(f"modules = {modules}")  # 0 
+
+# 3. comparision operators 
+# > , <  , >=  ,  <=  ,  ==  , !=  
+
+print(f"greater than = {number1 > number2}")  # True
+print(f"less than = {number1 < number2}")  # False      
+
+print(f"greater than or equal to = {number1 >= number2}")  # True
+print(f"less than or equal to = {number1 <= number2}")  # False 
+print(f"equal to = {number1 == number2}")  # False
+print(f"not equal to = {number1 != number2}")  # True           
+
+# 4. logical operators
+# logical operators are used to combine conditional statements
+# and, or, not  
+
+print(f"and = {number1 > 20 and number2 < 20}")  # True
+# false and true = false
+print(f"and = {number1 > 20 and number2 > 20}")  # False
+print(f"or = {number1 > 20 or number2 < 20}")  # True
+# false or true = true
+print(f"or = {number1 > 20 or number2 > 20}")
+print(f"not = {not(number1 > 20)}")  # False        
+
