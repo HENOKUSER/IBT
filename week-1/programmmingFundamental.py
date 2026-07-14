@@ -55,11 +55,30 @@ print(f"full_name = {first_name} +5")  # sami5
 print(f"5. type([1, 2, 3]): {type([1, 2, 3])}")  # list is used to represent a collection of items    
 print(f"6. type(['sami', 'ali', 'ahmed']): {type(['sami', 'ali', 'ahmed'])}")  # list is used to represent a collection of items   
 
+# accessing list items
+my_list = [1, 2, 3, 4, 5]   
+print(f"my_list[0] = {my_list[0]}")  # 1
+
+# Building a list in a loop
+my_list = []
+for i in range(5):
+    my_list.append(i)
+print(f"my_list = {my_list}")  # [0, 1, 2, 3, 4]
+
 # 6. tuple
 print(f"7. type((1, 2, 3)): {type((1, 2, 3))}")  # tuple is used to represent a collection of items that cannot be changed   
 
+# accessing tuple items
+my_tuple = (1, 2, 3, 4, 5)  
+print(f"my_tuple[0] = {my_tuple[0]}")  # 1
+
+
 # 7 set
 print(f"8. type({1, 2, 3}): {type({1, 2, 3})}")  # set is used to represent a collection of unique items     
+
+# accessing set items
+my_set = {1, 2, 3, 4, 5}
+print(f"my_set = {my_set}")  # {1, 2, 3, 4, 5}  
 
 # 8 dictionary          
 print(f"9. type({{'name': 'sami', 'age': 23}}): {type({'name': 'sami', 'age': 23})}")  # dict is used to represent a collection of key-value pairs   
@@ -143,4 +162,57 @@ print(f"or = {number1 > 20 or number2 < 20}")  # True
 # false or true = true
 print(f"or = {number1 > 20 or number2 > 20}")
 print(f"not = {not(number1 > 20)}")  # False        
+
+
+# built in function used in string operation    
+# len ,upper, lower, strip, replace, split, find, index, count, isdigit, isalpha, isspace, islower, isupper, startswith, endswith
+
+#len counts the number of characters in a string
+print(f"len('hello world') = {len('hello world')}")  # 11  
+
+# upper converts all characters in a string to uppercase
+print(f"'hello world'.upper() = {'hello world'.upper()}")  # HELLO WORLD
+
+# lower converts all characters in a string to lowercase
+print(f"'HELLO WORLD'.lower() = {'HELLO WORLD'.lower()}")   
+
+# strip removes any leading and trailing whitespace from a string
+print(f"' hello     world '.strip() = {' hello world '.strip()}")  # hello world
+
+# replace replaces a specified substring with another substring in a string
+print(f"'hello world'.replace('world', 'python') = {'hello world'.replace('world', 'python')}")  # hello python     
+
+# split splits a string into a list of substrings based on a specified delimiter
+print(f"'hello world'.split() = {'hello world'.split()}")  # ['hello', 'world']     
+
+# find returns the index of the first occurrence of a specified substring in a string
+print(f"'hello world'.find('world') = {'hello world'.find('world')}")  # 6
+
+# index returns the index of the first occurrence of a specified substring in a string
+print(f"'hello world'.index('world') = {'hello world'.index('world')}")  # 6
+
+# count returns the number of occurrences of a specified substring in a string
+print(f"'hello world'.count('o') = {'hello world'.count('o')}")  # 2
+
+# isdigit returns True if all characters in a string are digits, otherwise False
+print(f"'12345'.isdigit() = {'12345'.isdigit()}")  # True
+print(f"'hello'.isdigit() = {'hello'.isdigit()}")  # False      
+
+# isalpha returns True if all characters in a string are alphabetic, otherwise False
+print(f"'hello'.isalpha() = {'hello'.isalpha()}")  # True   
+
+# isspace returns True if all characters in a string are whitespace, otherwise False
+print(f"'   '.isspace() = {'   '.isspace()}")  # True           
+
+# islower returns True if all characters in a string are lowercase, otherwise False
+print(f"'hello'.islower() = {'hello'.islower()}")  # True   
+
+# isupper returns True if all characters in a string are uppercase, otherwise False
+print(f"'HELLO'.isupper() = {'HELLO'.isupper()}")   
+
+# startswith returns True if a string starts with a specified substring, otherwise False
+print(f"'hello world'.startswith('hello') = {'hello world'.startswith('hello')}")  # True   
+
+# endswith returns True if a string ends with a specified substring, otherwise False
+print(f"'hello world'.endswith('world') = {'hello world'.endswith('world')}")  # True       
 
