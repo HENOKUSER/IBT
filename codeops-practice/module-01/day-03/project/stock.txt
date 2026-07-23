@@ -1,0 +1,8 @@
+    "Paracetamol": 150,
+    "Amoxicillin": 80,
+    "Ibuprofen": 200,
+    "Omeprazole": 50,
+    "Cetirizine": 120,
+    "Metformin": 95,
+    "Aspirin": 300
+
