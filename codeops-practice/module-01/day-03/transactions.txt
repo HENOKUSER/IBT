@@ -1,0 +1,12 @@
+name ="henok"
+price =2500
+name ="gudeta"
+price=5000
+name ="henok"
+price =200
+name ="gudeta"
+price=-500
+name ="henok"
+price =-100
+name ="gudeta"
+price=-1000

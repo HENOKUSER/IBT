@@ -1,0 +1,3 @@
+Customer Totals (highest to lowest)
+name 3500.0: total price  gudeta
+name 2600.0: total price  henok
