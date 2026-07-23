@@ -1,0 +1,54 @@
+Day 1 note
+
+$ git --version   returns a version number,
+$ git config --global user.name "Your Full Name"  Sets the name attached to every   
+                                                 commit you make on this machine
+$ git config --global user.email "you@example.com"  Sets the email attached to 
+                                                    every commit 
+$ git config --list      Displays all currently active configuration settings       
+git add <file>                   Working Directory → Staging Area
+git commit                    Staging Area → Local Repository
+git restore --staged <file>      Staging Area → Working Directory (unstage)
+git restore <file>       Local Repository → Working Directory (discard local edits)
+git push                     Local Repository → Remote Repository
+git pull / git fetch        Remote Repository → Local Repository 
+git clone URL
+
+$ mkdir my-first-project
+$ cd my-first-project
+$ git init
+
+pwd,       displays the full path of the folder you are  currently in.
+ls,List —  lists the visible files and folders in your current directory.
+ls -la,    "List long/all — lists all contents, including hidden files
+cd          folder,Change directory — moves into the specified subfolder.
+cd ..        ,Parent directory — moves up one folder level.
+cd ~,         Home directory — returns directly to your user's home folder.
+
+git status  
+git log     Full commit history with author, date, and message
+
+
+mkdir day01  Make a new directory.
+
+touch notes.md   Create an empty file (or update its timestamp).
+
+cat notes.md Print a file's contents to the screen.
+
+cp file copy Copy a file. Add -r to copy a whole folder.
+
+mv old new Move a file — or rename it, same command.
+
+rm file Remove a file. There is no recycle bin.
+
+
+
+1  Create the repo on GitHub New → name it → leave it empty (no README).
+
+2  Link it as 'origin' git remote add origin <url>
+
+3  Verify the link git remote -v shows the connected URL.
+
+4  First push git push -u origin main sets the default.
+
+
