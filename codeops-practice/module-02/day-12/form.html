@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      fieldset {
+        height: 350px;
+        width: 400px;
+        padding: 35px;
+        /* margin-inline: ; */
+      }
+
+      input,
+      select {
+        margin-top: 10px;
+      }
+      td,th{
+        text-align: center;
+      }
+      #map
+      {
+        width: 150px;
+        height: 150px;
+        border: 1px red solid;
+      }
+      iframe{
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>registration form</legend>
+        <label for="f_name">First Name</label>
+        <input type="text" name="f_name" id="f_name" required /><br />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required /><br />
+
+        <label for="password">Password</label>
+        <input type="text" name="" id="password" required /><br />
+
+        <label for="check">choose more than one</label>
+        <input type="checkbox" name="" id="check" required /><br />
+
+        <label for="radio">choose one</label>
+        <input type="radio" name="" id="radio" required /><br />
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          pattern="09[0-9]{8}"
+          title="Format: 0911223344"
+          name="phone"
+          id="phone"
+          required
+        /><br />
+
+        <label for="stu_id">Student ID</label>
+        <input
+          type="text"
+          pattern="AUTO-[0-9]{4}/R"
+          title="Format: AUTO-2531/R"
+          name="stu_id"
+          id="stu_id"
+          required
+        /><br />
+
+        <label for="dep" required>Department</label><br />
+        <select name="cs" id="dep">
+          <option value="cs">computer science</option>
+          <option value="automotive">automotive</option>
+          <option value="cs">computer mechanical</option>
+        </select>
+        <br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+
+    <h1>table</h1>
+    <table border="=1" style="width: 500px;">
+        <thead style="background-color: lightblue;">
+            <caption>currency</caption>
+            <th>currency </th>
+            <th>buy </th>
+            <th>sell </th>
+        </thead>
+        <tr>
+            <td>USD</td>
+            <td>57.20</td>
+            <td>58.34</td>
+        </tr>
+
+        <tr style="align-items: center;">
+            <td >EUR</td>
+            <td >61.05</td>
+            <td>62.27</td>
+        </tr>
+        <tr>
+            <td>GBP</td>
+            <td>71.40</td>
+            <td>72.48</td>
+        </tr>
+
+    </table>
+
+    <h1>video</h1>
+    <!-- <video src=""width="500px" height="500px" controls autoplay></video> -->
+
+    <iframe id="map" title="mezmure" width="560" height="315" src="https://www.youtube.com/embed/mXeU_Z-7QrA?si=I4PalpMMVsm7kSPK&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe id="map" title="map to tms college" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1380720443262!2d38.76275967399644!3d9.051167988643659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6cd745d673%3A0xba5f61049290050c!2z4Ymw4Y2I4YiqIOGImOGKruGKleGKlSDhjZbhiIog4Ym04Yqt4YqS4YqtIOGKruGIjOGMhSB8IFRlZmVyaSBNZWtvbm5lbiBQb2x5dGVjaG5pYyBDb2xsZWdl!5e0!3m2!1sen!2set!4v1785499801425!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </body>
+</html>
