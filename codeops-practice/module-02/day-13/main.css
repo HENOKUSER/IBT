@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box; /* question 1 */
+}
+
+:root {
+  --primary_color: #459;
+  --secondry_color: rgb(123, 186, 250);
+  --border-shadow: #d4af37;
+  --white: #ffffff;
+  --text-color: #000000;
+  --body_fobt_size: 18px;
+  --primary-blue: hsl(221, 83%, 53%);
+  --primary-blue-hover: hsl(221, 83%, 63%);
+  --gold-accent: hsl(46, 65%, 52%);
+  --gold-accent-hover: hsl(46, 65%, 62%);
+  --dark-slate: hsl(215, 28%, 17%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: var(--primary_color);
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  width: 300px;
+  padding: 24px;
+  border: 2px solid var(--secondry_color);
+  /* box-sizing:content-box;*/
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-top: 4px solid var(--border-shadow);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.card h3::before {
+  content: "ETB";
+  /* display: block; */
+  color: var(--text-color);
+  font-size: 2rem;
+  background-color: var(--secondry_color);
+}
+.card:hover {
+  box-shadow: 0px 0px 10px var(--border-shadow);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+table {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* background-color: var(--white); */
+  box-shadow: 0px 0px 10px var(--border-shadow);
+}
+
+td,
+th {
+  text-align: center;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: var(--secondry_color);
+  color: white;
+}
+
+th {
+  color: #716;
+}
+
+p {
+  color: var(--text-color);
+}
+
+.pclass {
+  color: black;
+}
+
+#pid {
+  color: red;
+}
+
+/* .card-actions {
+  display: flex;
+  gap: 0.75rem;
+} */
+
+.btn {
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.btn-gold {
+  background-color: var(--gold-accent);
+  color: var(--dark-slate);
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-accent-hover);
+}

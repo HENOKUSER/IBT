@@ -1,0 +1,77 @@
+* {
+  font-family: roboto, sanserif;
+  background-color: #014b43;
+}
+
+/* Descendant */
+.container .box {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+
+/* child */
+.container > div {
+  text-align: center;
+  vertical-align: middle;
+  margin: 25%;
+}
+
+/* Adjacent */
+h1 + p {
+  color: red;
+}
+.box + div {
+  background-color: yellow;
+}
+/* General sib */
+.box ~ p {
+  font-style: italic;
+  color: blue;
+  background-color: aqua;
+  align-items: center;
+  vertical-align: middle;
+}
+
+p ~ h1 {
+  color: green;
+}
+
+.box-last {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background-color: lightgray;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.big-box {
+  width: 500px;
+  height: 500px;
+  background-color: #099078;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 95%);
+  margin-block: 20px;
+}
+
+p {
+  background-color: #f2f2f2;
+}
+
+.small-box:hover
+{
+    background-color: black;
+}
