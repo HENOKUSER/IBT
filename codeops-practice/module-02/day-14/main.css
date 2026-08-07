@@ -1,0 +1,152 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* color */
+  --grid-back-ground: black;
+  --nav-back-ground: #74a7da;
+  --text-white: #eef1f4;
+  /* size */
+  --navbar-padding: 35px;
+  --nav-link-space: 25px;
+  --nav-bar-heigth: 62.5px;
+  /* font */
+  --nav-links-font--size: 1.4rem;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--nav-back-ground);
+  height: var(--nav-bar-heigth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  padding-left: var(--navbar-padding);
+  /* background-color: aliceblue; */
+}
+nav .logo a {
+  color: var(--text-white);
+  padding: 22.5px;
+}
+.logo a:hover {
+  color: var(--nav-back-ground);
+  background-color: var(--text-white);
+  font-weight: bolder;
+}
+
+.nav-links {
+  padding-right: 100px;
+  background-color: var(--navbar-padding);
+  /* background-color: aliceblue; */
+}
+
+.nav-links a {
+  padding-left: var(--nav-link-space);
+  font-size: var(--nav-links-font--size);
+  color: var(--text-white);
+  padding: 22.5px;
+}
+
+.nav-links a:hover {
+  color: var(--nav-back-ground);
+  background-color: var(--text-white);
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  margin-top: 25px;
+}
+.grid-box {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 35px 0px;
+}
+
+/* menu */
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menu {
+  margin: 0 auto;
+  display: grid;
+  width: 75%;
+  background-color: #74a7da;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  grid-template-columns: 220px 1fr;
+  gap: 15px;
+}
+.food,
+.price {
+  text-align: center;
+}
+
+/* card */
+.menu-gallery {
+  margin: 0 auto;
+  width: 75%;
+  background-color: #74a7da;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-card {
+  width: 150px;
+  height: 250px;
+  background-color: yellowgreen;
+  position: relative;
+  margin: 15px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 125px;
+}
+.f_price {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+/* photo gallery using grid  */
+
+.photo-gallery {
+  background-color: #74a7da;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 75%;
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.photos {
+  background-color: #eef1f4;
+  margin: 15px auto;
+  width: 300px;
+  height: 300px;
+}
