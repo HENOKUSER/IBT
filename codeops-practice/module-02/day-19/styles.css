@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Strikethrough for completed items */
+.done span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  margin-left: 15px;
+  color: red;
+  cursor: pointer;
+}
