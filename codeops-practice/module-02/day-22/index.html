@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birr Watch</title>
+    <meta
+      name="description"
+      content="Live Ethiopian Birr exchange rates, conversion, and a saved watchlist."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Birr Watch</h1>
+      </header>
+
+      <main class="stack">
+        <section class="panel panel--status" aria-live="polite">
+          <span
+            id="status-dot"
+            class="status-dot status-dot--loading"
+            aria-hidden="true"
+          ></span>
+          <p id="rates-status" class="panel__status-text">
+            Loading live rates&hellip;
+          </p>
+        </section>
+
+        <section class="panel panel--converter">
+          <h2 class="panel__title">Convert</h2>
+
+          <div class="field">
+            <label for="amount" class="field__label">Amount in ETB</label>
+            <input
+              type="number"
+              id="amount"
+              class="field__input"
+              placeholder="e.g. 500"
+              min="0"
+              step="any"
+              inputmode="decimal"
+              autocomplete="off"
+            />
+            <p id="amount-error" class="field__error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="currency" class="field__label">Convert to</label>
+            <select id="currency" class="field__select"></select>
+          </div>
+
+          <p class="readout-label">Result</p>
+          <p id="result" class="readout">&mdash;</p>
+
+          <button type="button" id="add-watchlist" class="btn btn--secondary">
+            Add to Watchlist
+          </button>
+        </section>
+
+        <section class="panel panel--watchlist">
+          <h2 class="panel__title">Watchlist</h2>
+          <ul id="watchlist" class="watchlist"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
