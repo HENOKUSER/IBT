@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>addis Eats</h1>
+      <div class="div">
+        <label for="search">search</label>
+        <input type="search" id="search" value="" />
+      </div>
+      <div class="cart">
+        <h3 id="total-quantity"></h3>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Our Menu</h1>
+        <div class="container"></div>
+      </section>
+      <aside id="cart">
+        <h2>Your Order</h2>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+          <span>Total:</span>
+          <strong><span id="total-price">0</span> ETB</strong>
+        </div>
+        <form id="checkout" novalidate>
+          <label
+            >Name
+            <input id="name" required />
+          </label>
+
+          <label
+            >Phone (TeleBirr)
+            <input id="phone" placeholder="09xxxxxxxx" />
+          </label>
+
+          <label
+            >Delivery area
+            <select id="area">
+              <option>Bole</option>
+              <option>Kazanchis</option>
+              <option>Megenagna</option>
+            </select>
+          </label>
+
+          <p id="form-error" class="error"></p>
+          <button type="submit">Place order</button>
+        </form>
+      </aside>
+    </main>
+    <footer><p>Bole, Addis Ababa · TeleBirr</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

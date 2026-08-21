@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addis Eats - Local Food Ordering</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Semantic Header with App Title and Live Search -->
+    <header>
+      <div class="header-container">
+        <h1>Addis Eats</h1>
+        <input
+          type="search"
+          id="search"
+          placeholder="Search dishes..."
+          aria-label="Search dishes"
+        />
+      </div>
+    </header>
+
+    <!-- Main Grid Container for Responsive Layout -->
+    <main>
+      <!-- Menu Grid Area -->
+      <section id="menu-section" aria-label="Menu">
+        <h2>Our Menu</h2>
+        <div id="menu" class="menu-grid"></div>
+      </section>
+
+      <!-- Cart Sidebar Panel -->
+      <aside id="cart" aria-label="Your order">
+        <h2>Your Order</h2>
+        <ul id="cart-list" class="cart-list"></ul>
+        <div class="cart-summary">
+          <p><strong>Total:</strong> <span id="cart-total">0</span> ETB</p>
+          <button id="checkout-btn" class="btn-checkout">
+            Checkout with TeleBirr
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Bole, Addis Ababa | TeleBirr</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
