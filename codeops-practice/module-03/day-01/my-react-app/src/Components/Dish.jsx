@@ -14,6 +14,7 @@ const Dish = ({ dish }) => {
       <img src={imageUrl} alt={name} />
       <p>{name}</p>
       <p>{price}</p>
+      <button></button>
     </div>
   );
 };
