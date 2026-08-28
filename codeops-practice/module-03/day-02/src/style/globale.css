@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: green;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+.Footer {
+  background-color: black;
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.Menu {
+  background-color: lightgray;
+  color: white;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas: "sidebar main";
+  margin: 10px;
+  text-align: center;
+}
+
+.Main {
+  background-color: blue;
+  color: white;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.SideBar {
+  background-color: green;
+  grid-area: sidebar;
+  color: white;
+}
+.CardContainer {
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 300px;
+  background-color: rgb(241, 237, 237);
+  padding: 5px;
+  color: black;
+  border-radius: 8px 8px 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
