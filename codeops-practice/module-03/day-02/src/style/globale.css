@@ -41,27 +41,91 @@
   grid-area: sidebar;
   color: white;
 }
+
 .CardContainer {
-  /* background-color: brown; */
   display: flex;
-  align-items: center;
+  align-items: stretch; /* was: center */
   justify-content: center;
   margin: 25px;
   flex-wrap: wrap;
   gap: 10px;
 }
 
+.CardWrapper {
+  display: flex;
+  height: auto;
+}
 .card {
-  width: 300px;
+  width: 250px;
   background-color: rgb(241, 237, 237);
   padding: 5px;
   color: black;
   border-radius: 8px 8px 0 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* min-height removed — let content size the card */
 }
+
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+}
+
+.card p {
+  padding: 6px 10px;
+  margin: 0;
+}
+.disc {
+margin-top: 0;  
+}
+.badge {
+  background-color: #d9534f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* --- Empty state (new: category filter with no matches) --- */
+.Menu p {
+  color: #333;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.empty-state {
+  color: #333;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.category-search {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.category-search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.category-search button {
+  padding: 6px 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }

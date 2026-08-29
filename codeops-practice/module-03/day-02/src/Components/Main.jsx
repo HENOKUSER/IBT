@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "./Card";
+import PropTypes from "prop-types";
 import "../style/globale.css";
 
-const Main = () => {
-  return (
-    <div className="Main">
-      <Card />
-    </div>
-  );
+const Main = ({ children }) => {
+  return <div className="Main">{children}</div>;
+};
+
+Main.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Main;
