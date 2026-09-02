@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Restaurant Menu App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Restaurant</h1>
+      <div class="navLinks">
+        <button class="btn" data-category="All">All</button>
+        <button class="btn" data-category="Main">main</button>
+        <button class="btn" data-category="Vegetarian">vegeterian</button>
+        <button class="btn" data-category="Breakfast">breakfast</button>
+        <button class="btn" data-category="Side">Side</button>
+      </div>
+      <div class="searchBox">
+        <input type="text" placeholder="Search menu..." />
+      </div>
+    </header>
+    <main class="menuContainer">
+      <section class="cardContainer"></section>
+      <aside class="orderSummary">
+        <div class="cart">
+          <h2>Order Summary</h2>
+          <div class="cartItems"></div>
+          <div class="toatalPrice">
+            <p>Total:</p>
+            <p class="total">0 ETB</p>
+          </div>
+          <button class="makePayment">make payment</button>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2026 My Restaurant. All rights reserved.</p>
+    </footer>
+    <div class="modalOverlay">
+      <form class="paymentForm">
+        <label for="fullname">Full name</label><br />
+        <input type="text" name="fullname" id="fullname" />
+        <p class="error nameError"></p>
+
+        <label for="phonenumber">phone number</label><br />
+        <input type="tel" name="phonenumber" id="phonenumber" />
+        <p class="error phoneError"></p>
+
+        <label for="address">address </label><br />
+        <input type="text" name="address" id="address" />
+        <p class="error addresserror"></p>
+
+        <div class="formButtons">
+          <button type="button" class="cancelOrder">cancel</button>
+          <button type="submit" class="placeorder">place order</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="App.js"></script>
+</html>
