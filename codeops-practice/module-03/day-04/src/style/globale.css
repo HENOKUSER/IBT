@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: green;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+.Footer {
+  background-color: black;
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.Menu {
+  background-color: lightgray;
+  color: white;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas: "sidebar main";
+  margin: 10px;
+  text-align: center;
+}
+
+.Main {
+  background-color: blue;
+  color: white;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.SideBar {
+  background-color: green;
+  grid-area: sidebar;
+  color: white;
+  padding: 10px;
+}
+
+.CardContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.CardWrapper {
+  display: flex;
+  height: auto;
+}
+.card {
+  width: 300px;
+  background-color: rgb(241, 237, 237);
+  padding: 5px;
+  color: black;
+  border-radius: 8px 8px 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card p {
+  padding: 6px 10px;
+  margin: 0;
+}
+.disc {
+  margin-top: 0;
+}
+.badge {
+  background-color: #d9534f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.Menu p {
+  color: #333;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.empty-state {
+  color: #333;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.category-search {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.category-search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.category-search button {
+  padding: 6px 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn {
+  background-color: blue;
+  border: navajowhite;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+  display: inline;
+}
+.count {
+  color: blue;
+  font-size: 22px;
+  display: inline;
+}
+
+.CategoryBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.chip {
+  padding: 6px 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chip.active {
+  background-color: white;
+  color: blue;
+}
+
+.order-total {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.delivery-form input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.delivery-form button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b7a3b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delivery-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.field-error {
+  color: #d9534f;
+  font-size: 13px;
+}
+
+.order-btn {
+  margin: 15px 0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
