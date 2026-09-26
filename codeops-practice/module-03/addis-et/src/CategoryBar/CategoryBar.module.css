@@ -1,0 +1,27 @@
+/* CategoryBar.module.css */
+.bar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background-color: white;
+  border: 1px solid #e2cfc0;
+  color: #5c4a40;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #8b2f1a;
+  border: 1px solid #8b2f1a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 600;
+}

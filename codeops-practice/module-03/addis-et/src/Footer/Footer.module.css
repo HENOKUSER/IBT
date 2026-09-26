@@ -1,0 +1,39 @@
+.footer {
+  background-color: #f6e9de;
+  color: #5c4a40;
+  padding: 2.5rem 2rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: #3a2b24;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0 0 0.3rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #8a7568;
+  border-top: 1px solid #e2cfc0;
+  padding-top: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 2rem 1.25rem 1.25rem;
+  }
+}
